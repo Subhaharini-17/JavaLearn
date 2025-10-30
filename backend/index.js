@@ -86,6 +86,10 @@ app.get('/api/debug/routes', (req, res) => {
 
   res.json({ routes });
 });
+// ✅ Root Route (for Render check)
+app.get("/", (req, res) => {
+  res.send("✅ JavaLearn backend is running successfully on Render!");
+});
 
 // ✅ 404 Handler
 app.use('*', (req, res) => {

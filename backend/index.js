@@ -12,7 +12,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:9004',
-    'http://localhost:3001'
+    'http://localhost:3001',
+    'https://reverse-engineer-of-w3-schools-ja-va-java-learn-f2oerxdog.vercel.app'
   ],
   credentials: true,
 }));
@@ -85,10 +86,6 @@ app.get('/api/debug/routes', (req, res) => {
   });
 
   res.json({ routes });
-});
-// ✅ Root Route (for Render check)
-app.get("/", (req, res) => {
-  res.send("✅ JavaLearn backend is running successfully on Render!");
 });
 
 // ✅ 404 Handler

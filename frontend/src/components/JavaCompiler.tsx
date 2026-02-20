@@ -49,7 +49,7 @@ export interface WebSocketCallbacks {
 export class JavaCompiler {
     // Base URL for API endpoints
     private static BASE_URL = 'https://javalearn-dac0.onrender.com/api';
-    private static WS_URL = 'ws://localhost:5000/ws/compile';
+    private static WS_URL = 'wss://javalearn-dac0.onrender.com/ws/compile';
 
     // Main method to run code - uses HTTP as fallback
     public static async runCode(code: string): Promise<CompilerOutput> {
@@ -576,4 +576,5 @@ export class JavaCompiler {
             message: 'Code looks good!'
         };
     }
+
 }

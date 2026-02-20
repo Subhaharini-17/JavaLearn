@@ -13,6 +13,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:9004',
     'http://localhost:3001',
+    'https://java-learn-k9o8.vercel.app',
     'https://reverse-engineer-of-w3-schools-ja-va-java-learn-f2oerxdog.vercel.app'
   ],
   credentials: true,

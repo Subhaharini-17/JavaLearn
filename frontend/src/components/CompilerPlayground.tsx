@@ -303,7 +303,7 @@ export function CompilerPlayground() {
   const connectWebSocket = useCallback(() => {
     // NOTE: Replace with your actual WebSocket endpoint
     // This part handles the 'correct' compiler connection and status updates
-    const ws = new WebSocket('ws://localhost:5000/ws/compile');
+    const ws = new WebSocket('wss://javalearn-dac0.onrender.com/ws/compile');
     
     ws.onopen = () => {
       setWebsocket(ws);
